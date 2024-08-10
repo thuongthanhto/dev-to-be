@@ -1,11 +1,11 @@
 module.exports = {
-  HOST: process.env.DB_HOST,
-  USER: process.env.DB_USER,
-  PASSWORD: process.env.DB_PASSWORD,
-  DB: process.env.DB_NAME,
-  dialect: process.env.DB_DIALECT,
-  port: process.env.DB_PORT,
-  pool: {
+  db_host: process.env.DB_HOST,
+  db_user: process.env.DB_USER,
+  db_password: process.env.DB_PASSWORD,
+  db_name: process.env.DB_NAME,
+  db_dialect: process.env.DB_DIALECT,
+  db_port: process.env.DB_PORT,
+  db_pool: {
     max: 5,
     min: 0,
     acquire: 30000,
