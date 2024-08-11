@@ -1,15 +1,10 @@
 {
   "version": 2,
+  "name": "nodejs-mysql",
   "builds": [
-    {
-      "src": "api/index.js",
-      "use": "@vercel/node"
-    }
+    { "src": "*.js", "use": "@vercel/node" }
   ],
   "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "api/index.js"
-    }
+    { "src": "/(.*)", "dest": "/server.js" }
   ]
 }
