@@ -9,6 +9,7 @@ const sequelize = new Sequelize(
     host: config.db_host,
     port: config.db_port,
     dialect: config.db_dialect,
+    dialectModule: "mysql2",
     pool: {
       max: config.db_pool.max,
       min: config.db_pool.min,
